@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    color: green;
+    font-size: 30px;
+}
+
+#parrafo2{
+    color: red;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#parrafo1
+{
+    font-size: 35px;
+    color: green;
+}
+
+h1 {
+    color: blue;
+    font-size: 30px;
+    text-shadow: 2px 1px #0b0b47;
+}
+
+li {
+    color: #9a649a;
+}
+#item1
+{
+    font-weight: bold;
+    color: black;
+}
+#imp1
+{
+    text-decoration: underline;
+    color: rgb(7, 63, 7);
+}
+.imagenesTablas
+{
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px black;
+}
+header
+{
+    background-image: url("../imagenes/imagenfondoheader.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 440px;
+}
+#imgLogo
+{
+    width: 200px;
+}
