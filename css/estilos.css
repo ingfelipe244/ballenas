@@ -38,20 +38,50 @@ li {
     text-decoration: underline;
     color: rgb(7, 63, 7);
 }
-.imagenesTablas
+.imagenesTablas 
 {
+    margin: 40px;
+    padding: 40px;
+    border: 3px solid red;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 0px black;
 }
 header
 {
-    background-image: url("../imagenes/imagenfondoheader.png");
+    /* background-image: url("../imagenes/imagenfondoheader.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 440px;
+    height: 440px; */
+    background-color: rgb(60, 160, 218);
 }
 #imgLogo
 {
     width: 200px;
+}
+.contServ
+{
+    width: 400px;
+    height: 350px;
+}
+.imgServ
+{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 3px rgb(55, 55, 109);
+}
+.services
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tiposBallenas
+{
+     display: flex;
+     justify-content: space-evenly;
+}
+.contenidoTipos
+{
+    width: 40%;
 }
