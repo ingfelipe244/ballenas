@@ -7,7 +7,11 @@ th {
     color: green;
     font-size: 15px;
 }
-
+label, input, select, textarea
+{
+    margin-left: 25px;
+    color:green;
+}
 #parrafo2{
     color: red;
     font-weight: bold;
@@ -15,8 +19,9 @@ th {
 }
 #parrafo1
 {
-    font-size: 35px;
-    color: green;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 h1 {
@@ -41,7 +46,6 @@ li {
 .imagenesTablas 
 {
     margin: 10px;
-    border: 3px solid red;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 0px black;
 }
@@ -84,4 +88,62 @@ header
 .contenidoTipos
 {
     width: 40%;
+}
+.contInscripcion
+{
+    width: 40%;
+}
+#videoPpal
+{
+    border-radius: 20px;
+    margin-top: 100px;
+}
+#fila1Tabla, #fila3Tabla
+{
+    background-color: #94eacd;
+}
+#fila2Tabla
+{
+     background-color: #4fd8e5;
+}
+.columnaContinente
+{
+   background-color: #acf1f6; 
+}
+table
+{
+    border: none;
+    border-collapse: collapse;
+}
+.inscripcionPpal
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#tituloInscripcion
+{
+    padding-top: 100px;
+}
+
+#primerItem
+{
+    color:red;
+}
+footer
+{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#pagos
+{
+    background-image: url(../imagenes/pse-1-300x300.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    border-radius: 100%;
 }

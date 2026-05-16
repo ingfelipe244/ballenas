@@ -9,28 +9,29 @@
 </head>
 
 <!-- cuerpo -->
+
 <body>
-    
+
     <!-- cabeza -->
-     
+
     <header>
         <center>
-            
+
             <img src="imagenes/logosinfondo.png" alt="" id="imgLogo">
-            
+
             <h1>Las Ballenas</h1>
-            
+
             <nav>
                 <a href="galeria.html">GALERIA DE IMAGENES </a>
                 <a href="sonidos.html">SONIDOS </a>
                 <a href="sonidos.html">CONTACTANOS </a>
             </nav>
         </center>
-        
+
     </header>
-    
+
     <main>
-        
+
         <!-- servicios -->
         <section class="services">
 
@@ -45,82 +46,86 @@
             <div class="contServ">
                 <img src="imagenes/servicio3.webp" alt="ballena jorobada" class="imgServ">
             </div>
-            
+
         </section>
 
+        <br>
+        <hr>
+        <br>
 
         <section class="tiposBallenas">
 
             <!-- video -->
             <div class="contenidoTipos">
-                <video src="videos/video1.mp4" width="500" controls></video>
+                <video src="videos/video1.mp4" width="500" id="videoPpal" controls></video>
             </div>
 
             <!-- tabla -->
             <div class="contenidoTipos">
 
-            
 
-            <table border="3" width="100%" height="400">
-                <caption> Tipos de Ballenas</caption>
-                <thead>
-                    <tr>
-                        <th>Continente</th>
-                        <th>Nombre</th>
-                        <th>Foto</th>
-                        <th>Ubicación</th>
-                        <th>País</th>
+
+                <table width="100%" height="400">
+                    <caption> Tipos de Ballenas</caption>
+                    <thead>
+                        <tr>
+                            <th>Continente</th>
+                            <th>Nombre</th>
+                            <th>Foto</th>
+                            <th>Ubicación</th>
+                            <th>País</th>
+                        </tr>
+                    </thead>
+
+                    <tr id="fila1Tabla"> <!-- fila 1-->
+                        <td rowspan="2" class="columnaContinente">POLOS</td>
+                        <td>ORCA</td> <!-- COL 1-->
+                        <td>
+
+                            <img class="imagenesTablas" src="imagenes/orca.webp" width="200">
+
+                        </td>
+                        <td colspan="2">Polo Norte</td><!-- COL 3-->
+
                     </tr>
-                </thead>
+                    <tr id="fila2Tabla"> <!-- fila 2-->
 
-                <tr> <!-- fila 1-->
-                    <td rowspan="2">POLOS</td>
-                    <td>ORCA</td> <!-- COL 1-->
-                    <td>
+                        <td>BARBADA</td> <!-- COL 1-->
+                        <td>
 
-                        <img class="imagenesTablas" src="imagenes/orca.webp" width="200">
+                            <img class="imagenesTablas" src="imagenes/jorobadapolosur.jpg" width="200">
 
-                    </td>
-                    <td colspan="2">Polo Norte</td><!-- COL 3-->
+                        </td>
+                        <td>Polo Sur</td><!-- COL 3-->
+                        <td>Islas malvinas</td>
+                    </tr>
+                    <tr id="fila3Tabla"> <!-- fila 3-->
+                        <td rowspan="2" class="columnaContinente"> EUROPA</td>
+                        <td></td> <!-- COL 1-->
+                        <td>
 
-                </tr>
-                <tr> <!-- fila 2-->
+                            <img class="imagenesTablas" src="imagenes/orca.webp" width="200">
+                        </td>
+                        <td>Mediterraneo</td><!-- COL 3-->
+                        <td></td>
+                    </tr>
 
-                    <td>BARBADA</td> <!-- COL 1-->
-                    <td>
-
-                        <img class="imagenesTablas" src="imagenes/jorobadapolosur.jpg" width="200">
-
-                    </td>
-                    <td>Polo Sur</td><!-- COL 3-->
-                    <td>Islas malvinas</td>
-                </tr>
-                <tr> <!-- fila 3-->
-                    <td rowspan="2"> EUROPA</td>
-                    <td></td> <!-- COL 1-->
-                    <td>
-
-                        <img class="imagenesTablas" src="imagenes/orca.webp" width="200">
-                    </td>
-                    <td>Mediterraneo</td><!-- COL 3-->
-                    <td></td>
-                </tr>
-                <tr> <!-- fila 4-->
-                    <td></td> <!-- COL 1-->
-                    <td></td>
-                    <td>Atlantico</td><!-- COL 3-->
-                    <td></td>
-                </tr>
-            </table>
+                </table>
 
             </div>
 
         </section>
 
-<!-- seccion formulario -->
-        <section>
+        <br>
+        <hr>
+        <br>
 
-            <article>
+        <!-- seccion formulario - textos  -->
+        <section class="inscripcionPpal">
+
+            <article class="contInscripcion">
+
+                <h1 id="tituloInscripcion"> NUESTRA COMPAÑIA</h1>
 
                 <p id="parrafo1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem iure nemo est
@@ -135,91 +140,94 @@
                     accusantium in, impedit temporibus enim inventore quis ex.
                 </p>
 
+                <center>
 
-                <ol>
-                    <li>
-                        Orca
-                    </li>
-                    <li id="item1">
-                        Azul
-                    </li>
-                    <li>
-                        Jorabada
-                    </li>
-                </ol>
+                    <a href="http://pse.com">
+                        <div id="pagos">
+
+                        </div>
+                    </a>
+                </center>
+
 
             </article>
 
 
-            <form action="nombreback.php" method="GET"><!-- POST Y GET -->
-                <fieldset>
-                    <legend>Datos Personales</legend>
-                    <label for="nombre1">Nombre: </label>
-                    <br>
-                    <input type="text" name="" id="nombre1">
-                    <br>
-                    <br>
+            <div class="contInscripcion">
 
-                    <label for="telcel1">Teléfono: </label>
-                    <br>
-                    <input type="number" name="" id="telcel1">
+                <form action="nombreback.php" method="GET"><!-- POST Y GET -->
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <br>
+                        <label for="nombre1" id="primerItem">Nombre: </label>
+                        <br>
+                        <input type="text" name="" id="nombre1">
+                        <br>
+                        <br>
 
-                    <br>
-                </fieldset>
-                <br>
+                        <label for="telcel1">Teléfono: </label>
+                        <br>
+                        <input type="number" name="" id="telcel1">
 
-                <label for="">Combo : </label>
-                <br>
-                <select>
-                    <option>--SELECCION--</option>
-                    <option>Transporte</option>
-                    <option>Transporte/Almuerzo</option>
-                    <option>Transporte/Almuerzo/Snacks</option>
-                    <option>Transporte/Almuerzo/Snacks/Cerveza</option>
-                </select>
+                        <br>
 
-                <br><br>
+                        <br>
 
-                <label for="telcel1">Buceo: </label>
-                <br>
-                3 metros
-                <input type="radio" name="inmersionMet">
-                <br>
-                5 metros
-                <input type="radio" name="inmersionMet">
-                <br>
-                7 metros
-                <input type="radio" name="inmersionMet">
+                        <label for="">Combo : </label>
+                        <br>
+                        <select>
+                            <option>--SELECCION--</option>
+                            <option>Transporte</option>
+                            <option>Transporte/Almuerzo</option>
+                            <option>Transporte/Almuerzo/Snacks</option>
+                            <option>Transporte/Almuerzo/Snacks/Cerveza</option>
+                        </select>
 
-                <br>
-                <br>
+                        <br><br>
 
-                CVC:
-                <br>
-                <input type="password" name="" id="">
+                        <label for="telcel1">Buceo: </label>
+                        <br>
+                        <label> metros</label>
+                        <input type="radio" name="inmersionMet">
+                        <br>
+                        <label>5 metros</label>
+                        <input type="radio" name="inmersionMet">
+                        <br>
+                        <label>7 metros</label>
+                        <input type="radio" name="inmersionMet">
 
-                <br><br>
-                <label for=""> Implementos que lleva:</label>
-                <br>
-                <input type="checkbox" name="datoImplemento" id=""> Celular
-                <input type="checkbox" name="datoImplemento" id=""> Caretas
-                <input type="checkbox" name="datoImplemento" id=""> zapatillas
+                        <br>
+                        <br>
 
-                <br><br>
+                        <label for="">CVC:</label>
+                        <br>
+                        <input type="password" name="" id="">
 
-                <label for="">
-                    Observaciones:
-                </label>
+                        <br><br>
+                        <label for=""> Implementos que lleva:</label>
+                        <br>
+                        <input type="checkbox" name="datoImplemento" id=""> Celular
+                        <input type="checkbox" name="datoImplemento" id=""> Caretas
+                        <input type="checkbox" name="datoImplemento" id=""> zapatillas
 
-                <br>
-                <textarea name="" id="" rows="5" cols="80"></textarea>
+                        <br><br>
 
-                <br><br>
-                <input type="submit" value="Guardar">
+                        <label for="">
+                            Observaciones:
+                        </label>
 
-            </form>
+                        <br>
+                        <textarea name="" id="" rows="5" cols="50"></textarea>
 
-            <button>ENVIAR</button>
+                        <br>
+                        <input type="submit" value="Guardar">
+                        <br>
+                    </fieldset>
+                </form>
+
+
+
+            </div>
 
 
         </section>
@@ -228,7 +236,32 @@
     </main>
 
 
+    <br>
+    <hr>
+    <br>
+
     <footer>
+
+        <div id="direcciones">
+
+            <ul>
+                <li>Dirección: Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Teléfon: xxx xx xx</li>
+                <li>Whatsapp: xxx xx xx</li>
+                <li>Correo: Lorem@amet.com</li>
+            </ul>
+
+        </div>
+
+        <div id="redesSociales">
+
+             <a href="https://www.facebook.com/groups/25165104873">
+                <img src="imagenes/facebook.fw.png" alt="">
+             </a>
+            <img src="imagenes/linkedin.fw.png" alt="">
+            <img src="imagenes/whatsapp.fw.png" alt="">
+
+        </div>
 
 
     </footer>
