@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,18 +7,22 @@ th {
     color: green;
     font-size: 15px;
 }
-label, input, select, textarea
-{
+
+label,
+input,
+select,
+textarea {
     margin-left: 25px;
-    color:green;
+    color: green;
 }
-#parrafo2{
+
+#parrafo2 {
     color: red;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#parrafo1
-{
+
+#parrafo1 {
     font-size: 20px;
     padding-top: 50px;
     padding-bottom: 80px;
@@ -33,24 +37,25 @@ h1 {
 li {
     color: #9a649a;
 }
-#item1
-{
+
+#item1 {
     font-weight: bold;
     color: black;
 }
-#imp1
-{
+
+#imp1 {
     text-decoration: underline;
     color: rgb(7, 63, 7);
 }
-.imagenesTablas 
-{
+
+.imagenesTablas {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 0px black;
+    width: 200px;
 }
-header
-{
+
+header {
     /* background-image: url("../imagenes/imagenfondoheader.png");
     background-size: 100%;
     background-position: center;
@@ -58,86 +63,114 @@ header
     height: 440px; */
     background-color: rgb(60, 160, 218);
 }
-#imgLogo
-{
+
+#imgLogo {
     width: 200px;
 }
-.contServ
-{
+
+#menu {
+    background-color: #41418d;
+    box-shadow: 2px 10px 15px 0px black;
+    padding: 20px;
+}
+
+#menu li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+
+
+.contServ {
     width: 400px;
     height: 350px;
 }
-.imgServ
-{
+
+.imgServ {
     width: 100%;
     height: 250px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 3px rgb(55, 55, 109);
 }
-.services
-{
+
+.services {
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
-.tiposBallenas
-{
-     display: flex;
-     justify-content: space-evenly;
+
+.tiposBallenas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
-.contenidoTipos
-{
+
+.contenidoTipos {
     width: 40%;
 }
-.contInscripcion
-{
+
+.contInscripcion {
     width: 40%;
 }
-#videoPpal
-{
+
+#videoPpal {
     border-radius: 20px;
     margin-top: 100px;
+    width: 500px;
 }
-#fila1Tabla, #fila3Tabla
-{
+
+#fila1Tabla,
+#fila3Tabla {
     background-color: #94eacd;
 }
-#fila2Tabla
-{
-     background-color: #4fd8e5;
+
+#fila2Tabla {
+    background-color: #4fd8e5;
 }
-.columnaContinente
-{
-   background-color: #acf1f6; 
+
+.columnaContinente {
+    background-color: #acf1f6;
 }
-table
-{
+
+table {
     border: none;
     border-collapse: collapse;
 }
-.inscripcionPpal
-{
+
+.inscripcionPpal {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
-#tituloInscripcion
-{
+
+#tituloInscripcion {
     padding-top: 100px;
 }
 
-#primerItem
-{
-    color:red;
+#primerItem {
+    color: red;
 }
-footer
-{
+
+footer {
 
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 
 }
-#pagos
-{
+
+#pagos {
     background-image: url(../imagenes/pse-1-300x300.png);
     width: 100px;
     height: 100px;
@@ -146,4 +179,138 @@ footer
     background-size: 100%;
 
     border-radius: 100%;
+}
+
+/*Estas son las reglas para celular*/
+
+@media(max-width:450px) {
+
+    ul
+    {
+        
+        padding-inline-start: 0px;
+        margin-block-start: 0em;
+    }
+
+
+    #menu {
+    background-color: #41418d;
+    box-shadow: 2px 10px 15px 0px black;
+    
+    }
+
+
+    #menu li {
+        list-style: none;
+        display: list-item;
+        padding-left: 0px;
+        margin-top: 10px;
+        
+    }
+
+    .services {
+
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contServ {
+
+
+        width: 90%;
+        height: 350px;
+    }
+
+    .tiposBallenas {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .inscripcionPpal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contInscripcion {
+        width: 90%;
+    }
+
+    #parrafo1 {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        text-align: justify;
+    }
+
+
+
+    footer {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .contenidoTipos {
+        width: 90%;
+    }
+
+    #videoPpal {
+        border-radius: 20px;
+        margin-top: 20px;
+
+        width: 100%;
+    }
+
+    .imagenesTablas {
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px 0px black;
+        width: 60px;
+    }
+
+
+    table {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 11px;
+        border-radius: 15px;
+    }
+
+    td {
+        padding: 4px;
+    }
+
+    caption {
+        border-radius: 15px 15px 0px 0px;
+        background-color: #2b4fa8;
+        color: white;
+        height: 30px;
+        padding-top: 10px;
+    }
+
+    th {
+
+        background-color: #2b4fa8;
+        color: white;
+    }
+
+    textarea {
+        width: 80%;
+        height: 150px;
+    }
+
+    input,
+    select {
+        width: 80%;
+        height: 35px;
+    }
+
 }
